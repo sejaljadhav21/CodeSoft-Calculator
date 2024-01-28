@@ -1,2 +1,2 @@
 # CodeSoft
-CodeSoft Internship Tasks
+CodeSoft Internship Calculator Task
