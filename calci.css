@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(30deg, #121212, #fff);
+}
+
+.calci {
+    background: transparent;
+    padding: 25px;
+    margin: 10px;
+    border: solid 1px rgb(235, 228, 228);
+    border-radius: 20px;
+    box-shadow: 20px 30px 15px #100f0f;
+}
+
+input {
+    color: #fff;
+    width: 320px;
+    border: 1px solid #d8ccdc;
+    border-radius: 10px;
+    padding: 24px;
+    margin: 10px;
+    background: black;
+    font-size: 40px;
+    text-align: right;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 9px;
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 1px;
+    border-radius: 50%;
+    background: black;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.operator-button {
+    color: rgb(147, 176, 31);
+}
+
+.equal-button {
+    background-color: orange;
+}
+
+@media screen and (min-width:200px) and (max-width: 1200px) {
+    .calci {
+        padding: 10px;
+    }
+
+    input {
+        padding: 12px;
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
